@@ -77,10 +77,18 @@
 
 
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2px;
 }
+
+.item {
+    padding: 2px;
+    margin: 2px;
+}
+
+
 
 ul {
     list-style-type: none;
@@ -110,9 +118,8 @@ div.container {
 
 
 div.desc {
-    width: 80%;
+    width: 200px;
   padding: 4px;
-  text-align: center;
 }
 
 * {
